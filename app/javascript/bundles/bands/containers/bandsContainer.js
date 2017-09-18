@@ -15,7 +15,6 @@ class BandsContainer extends React.Component {
   render() {
 
     return (
-      <div className="BandsContainer">
         <Grid className="background">
           <Row>
             <Col xs={12} className="text-center">
@@ -31,7 +30,6 @@ class BandsContainer extends React.Component {
             </Col>
           </Row>
         </Grid>
-      </div>
     );
   }
 }

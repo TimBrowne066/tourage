@@ -4,6 +4,7 @@
   "dependencies": {
     "@rails/webpacker": "^3.0.1",
     "babel-preset-react": "^6.24.1",
+    "hover.css": "^2.2.1",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.3",

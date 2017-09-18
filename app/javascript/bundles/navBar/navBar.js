@@ -7,8 +7,8 @@ const NavBar = (props) => {
   return(
     <Navbar>
       <Navbar.Header>
-        <Navbar.Brand className="logo">
-          <a href="/">TOURAGE</a>
+        <Navbar.Brand>
+          <a href="/" className="hvr-grow">TOURAGE</a>
         </Navbar.Brand>
       </Navbar.Header>
     </Navbar>

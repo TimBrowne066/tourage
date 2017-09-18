@@ -14,28 +14,70 @@
  *= require_self
  */
 
+ @font-face {
+ 	font-family: 'Franklin Gothic Std';
+ 	src: url('subset-FranklinGothicStd-ExtraCond.ttf') format('truetype');
+ 	font-weight: normal;
+ 	font-style: normal;
+ }
 
+ body {
+   font-family: 'Franklin Gothic Std';
+ }
+ html {
+   font-family: 'Franklin Gothic Std';
+ }
 
  .navbar {
    background-color: #E7E7E9;
-   padding-top: 1.5em;
-   padding-bottom: 1.5em;
+   max-width: 100%;
  }
 
  .navbar-header {
    color: #2FC8E5;
+   font-size: 60px;
+   vertical-align: bottom;
+   line-height: 65px;
+
  }
  .navbar-brand {
-   font-size: 24px;
+   font: 'Franklin Gothic Std';
    font-weight: bold;
    color: #2FC8E5;
+   padding-left: 70px;
+   line-height: 65px;
+
  }
 
  .bands-title {
-  text-shadow: 0px 5px 5px rgba(247, 5, 5, 0.54), 0px 7px 5px rgba(243, 237, 237, 0.85), 0px 10px 5px rgba(12, 72, 241, 0.73);
 }
 
 .icon {
   width: 42px;
   height: 42px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
 }
