@@ -13,3 +13,29 @@
  *= require_tree .
  *= require_self
  */
+
+
+
+ .navbar {
+   background-color: #E7E7E9;
+   padding-top: 1.5em;
+   padding-bottom: 1.5em;
+ }
+
+ .navbar-header {
+   color: #2FC8E5;
+ }
+ .navbar-brand {
+   font-size: 24px;
+   font-weight: bold;
+   color: #2FC8E5;
+ }
+
+ .bands-title {
+  text-shadow: 0px 5px 5px rgba(247, 5, 5, 0.54), 0px 7px 5px rgba(243, 237, 237, 0.85), 0px 10px 5px rgba(12, 72, 241, 0.73);
+}
+
+.icon {
+  width: 42px;
+  height: 42px;
+}

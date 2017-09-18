@@ -7,4 +7,16 @@
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
 
-console.log('Hello World from Webpacker')
+import 'babel-polyfill';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Main from './main';
+import ReactOnRails from 'react-on-rails';
+import NavBar from '../bundles/NavBar/navBar';
+import BandsContainer from '../bundles/bands/containers/bandsContainer';
+import BandShowContainer from '../bundles/bands/containers/bandShowContainer';
+
+
+ReactOnRails.register({
+  Main, NavBar, BandsContainer, BandShowContainer
+});
