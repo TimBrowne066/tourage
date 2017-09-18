@@ -1,6 +1,6 @@
 import React from 'react';
 import BandCardsContainer from './bandCardsContainer';
-import PageTitle from '../components/PageTitle';
+import PageTitle from '../components/pageTitle';
 import { Grid, Row, Col, Button, Well } from 'react-bootstrap';
 
 

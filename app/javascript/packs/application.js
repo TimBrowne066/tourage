@@ -12,7 +12,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Main from './main';
 import ReactOnRails from 'react-on-rails';
-import NavBar from '../bundles/NavBar/navBar';
+import NavBar from '../bundles/navBar/navBar';
 import BandsContainer from '../bundles/bands/containers/bandsContainer';
 import BandShowContainer from '../bundles/bands/containers/bandShowContainer';
 
