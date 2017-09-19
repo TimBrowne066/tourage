@@ -28,26 +28,27 @@
    font-family: 'Franklin Gothic Std';
  }
 
- .navbar {
-   background-color: #E7E7E9;
-   max-width: 100%;
- }
-
- .navbar-header {
-   color: #2FC8E5;
-   font-size: 60px;
-   vertical-align: bottom;
-   line-height: 75px;
-
- }
- .navbar-brand {
-   font: 'Franklin Gothic Std';
-   font-weight: bold;
-   color: #2FC8E5;
-   padding-left: 70px;
-   line-height: 65px;
-
- }
+ // .navbar {
+ //   background-color: #E7E7E9;
+ //   max-width: 100%;
+ // }
+ //
+ // .navbar-header {
+ //   color: #2FC8E5;
+ //   font-size: 60px;
+ //   text
+ //   vertical-align: bottom;
+ //   line-height: 75px;
+ //
+ // }
+ // .navbar-brand {
+ //   font: 'Franklin Gothic Std';
+ //   font-weight: bold;
+ //   color: #2FC8E5;
+ //   padding-left: 70px;
+ //   line-height: 65px;
+ //
+ // }
 
  .bands-title {
 }
@@ -80,4 +81,34 @@ a:visited {
 .hvr-grow:focus,
 .hvr-grow:active {
     transform: scale(1.1);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15;
+    overflow: hidden;
+    background-color: #E7E7E9;
+    height: 50px;
+}
+
+li {
+    float: left;
+    font-size: 160px;
+    padding-top: 15px;
+    padding-left: 70px;
+    line-height: 65px;
+}
+
+li a {
+    display: block;
+    color: #2FC8E5;
+    font-size: 100px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.google {
+  float: right;
+
 }
