@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20170919141809) do
     t.string "band_email"
     t.string "band_booking_agent"
     t.string "band_photo_url"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -39,6 +40,10 @@ ActiveRecord::Schema.define(version: 20170919141809) do
     t.string "venue", null: false
     t.datetime "date", null: false
     t.integer "band_id", null: false
+    t.integer "user_id", null: false
+    t.string "event_link"
+    t.string "tickets_link"
+    t.text "details"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -1,5 +1,8 @@
 class User < ActiveRecord::Base
   def self.from_omniauth(auth)
+    has_many :bands
+    has_many :shows
+
     where(provider: auth.provider, uid: auth.uid).first_or_initialize.tap do |user|
       user.provider = auth.provider
       user.uid = auth.uid

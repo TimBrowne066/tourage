@@ -10,4 +10,12 @@ Tourage::Application.routes.draw do
     resources :bands do
       resources :shows
     end
+
+    namespace :api do
+      namespace :v1 do
+        resources :bands do
+          resources :shows
+        end
+      end
+    end
 end
