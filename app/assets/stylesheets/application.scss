@@ -14,18 +14,26 @@
  *= require_self
  */
 
- @font-face {
- 	font-family: 'Franklin Gothic Std';
- 	src: url('subset-FranklinGothicStd-ExtraCond.ttf') format('truetype');
- 	font-weight: normal;
- 	font-style: normal;
- }
+ // @font-face {
+ // 	font-family: 'Franklin Gothic Std';
+ // 	src: url('subset-FranklinGothicStd-ExtraCond.ttf') format('truetype');
+ // 	font-weight: normal;
+ // 	font-style: normal;
+ // }
+ //
 
  body {
-   font-family: 'Franklin Gothic Std';
+   font-family: 'Cabin Sketch', cursive;
+   background: url(https://i2.wp.com/www.staticmediagroup.co.uk/wp-content/uploads/2013/02/handsbackground.jpg) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+
  }
+
  html {
-   font-family: 'Franklin Gothic Std';
+   font-family: 'Cabin Sketch', cursive;
  }
 
  // .navbar {
@@ -49,6 +57,10 @@
  //   line-height: 65px;
  //
  // }
+// font-family: 'Zilla Slab Highlight', cursive;
+// font-family: 'Rock Salt', cursive;
+// font-family: 'Cabin Sketch', cursive;
+// font-family: 'Slabo 27px', serif;
 
  .bands-title {
 }
@@ -58,15 +70,10 @@
   height: 42px;
 }
 
-a:link {
-    text-decoration: none;
-}
-
-a:visited {
-    text-decoration: none;
-}
-
 .hvr-grow {
+    color: #47C7E8;
+    font-size: 38px;
+    padding-left: 5px;
     display: inline-block;
     vertical-align: middle;
     transform: translateZ(0);
@@ -85,19 +92,21 @@ a:visited {
 
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: auto;
     padding: 15;
     overflow: hidden;
-    background-color: #E7E7E9;
+    background-color: darkgray;
     height: 50px;
+    border: 1px solid black;
+
 }
 
 li {
     float: left;
     font-size: 160px;
-    padding-top: 15px;
-    padding-left: 70px;
+    padding: inherit;
     line-height: 65px;
+    display: inline;
 }
 
 li a {
@@ -109,6 +118,43 @@ li a {
     text-decoration: none;
 }
 .google {
+  font-size: 20px;
   float: right;
+  padding-top: 13px;
+  padding-right: 10px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+  padding-top: 5px;
+  float: left;
+  width: 40px;
+  height: 40px;
+}
+
+.form-background {
+  background-image: url("http://sumthinblue.com/wp-content/uploads/2015/02/FB-Header-Background-Pale-Blue-1024x1024.jpg");
+  border: 1px solid lightgray;
+}
+
+.card-image {
+  border: 1px solid darkgrey;
+  width: 100%;
+  margin: 4px;
+}
+
+.title {
+  color: white;
+}
+
+.links {
 
 }

@@ -12,6 +12,8 @@ class CreateBands < ActiveRecord::Migration[5.1]
       t.string :band_email
       t.string :band_booking_agent
       t.string :band_photo_url
+      t.integer :user_id
+      
       t.timestamps
     end
   end
