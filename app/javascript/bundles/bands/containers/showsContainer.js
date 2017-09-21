@@ -21,6 +21,7 @@ class ShowsContainer extends React.Component {
               <h4>ZIP:  </h4><p>{show.zip}</p>
               <h4>EVENT LINK:  </h4><p>{show.event_link}</p>
               <h4>TICKETS:  </h4><p>{show.tickets_link}</p>
+              <img src={`https://maps.googleapis.com/maps/api/staticmap?center=${show.city.split("+")}&zoom=14&size=400x400&key=AIzaSyDyQ6APuEAG4mFjNChs7wAkXVq1ZGebmiw`}/>
 
           </Panel>
       )

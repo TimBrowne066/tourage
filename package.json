@@ -6,8 +6,6 @@
     "babel-preset-react": "^6.24.1",
     "hover.css": "^2.2.1",
     "moment": "^2.18.1",
-    "phantomjs": "^2.1.7",
-    "poltergeist": "^0.0.1",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.3",
@@ -24,5 +22,8 @@
   },
   "devDependencies": {
     "webpack-dev-server": "^2.8.2"
+  },
+  "engines": {
+    "node": "6.11.0"
   }
 }
