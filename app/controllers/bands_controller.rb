@@ -6,15 +6,18 @@ class BandsController < ApplicationController
 
   def show
     @band = Band.find(params[:id])
+    @shows = @band.shows
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
   end
 
   def new
+
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
     @band = Band.new
   end
 
   def create
+
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
     @band = Band.create(band_params)
     @band.user = @current_user
