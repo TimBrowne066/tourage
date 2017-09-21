@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 20170919141809) do
     t.string "zip", null: false
     t.string "address", null: false
     t.string "venue", null: false
-    t.datetime "date", null: false
+    t.date "date", null: false
     t.integer "band_id", null: false
     t.integer "user_id", null: false
     t.string "event_link"

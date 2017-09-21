@@ -19,6 +19,21 @@ require 'faker'
     facebook_url: "#{Faker::Internet.url}",
     band_email: "#{Faker::Internet.email}",
     band_booking_agent: "#{Faker::Internet.email}",
-    band_photo_url: "#{Faker::Avatar.image}"
+    band_photo_url: "#{Faker::Avatar.image}",
+    user_id: 1
+  )
+end
+
+500.times do
+  Show.create(
+  date: Date.today,
+  city: "San Francisco",
+  venue: "Bottom of the Hill",
+  address: "1220 16th st",
+  zip: "92547",
+  state: "CA",
+  band_id: "#{Faker::Number.between(1, 30)}",
+  user_id: 1,
+  details: "This is a show at a place at a time!"
   )
 end

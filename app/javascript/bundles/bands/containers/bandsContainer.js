@@ -42,7 +42,7 @@ class BandsContainer extends React.Component {
           </Row>
           <div>
             <PanelGroup>
-              <Panel collapsible header ="Add Your Band!" eventKey="1" className="buffer">
+              <Panel collapsible header="Add Your Band!" eventKey="1" className="text-center">
                 <NewBandFormContainer
                   user_id={this.props.user_id}
                   newBand={this.handleNewBand}

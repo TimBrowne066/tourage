@@ -23,7 +23,7 @@
  //
 
  body {
-   font-family: 'Cabin Sketch', cursive;
+   font-family: helvetica;
    background: url(https://i2.wp.com/www.staticmediagroup.co.uk/wp-content/uploads/2013/02/handsbackground.jpg) no-repeat center center fixed;
    -webkit-background-size: cover;
    -moz-background-size: cover;
@@ -33,7 +33,6 @@
  }
 
  html {
-   font-family: 'Cabin Sketch', cursive;
  }
 
  // .navbar {
@@ -95,7 +94,8 @@ ul {
     margin: auto;
     padding: 15;
     overflow: hidden;
-    background-color: darkgray;
+    background-image: url("http://kazuya-akimoto.com/2005/2005imges/4513_Abstract_Silver_Reed_Pattern_Japanese_minimalism_lines_Japonisme_painting.jpg");
+    background-size: cover;
     height: 50px;
     border: 1px solid black;
 
@@ -134,10 +134,9 @@ a:visited {
 }
 
 .logo {
-  padding-top: 5px;
-  float: left;
   width: 40px;
   height: 40px;
+  margin-bottom: 10px;
 }
 
 .form-background {
@@ -151,10 +150,26 @@ a:visited {
   margin: 4px;
 }
 
+.band-image {
+  border: 1px solid darkgrey;
+  margin: 4px;
+  width: 100%;
+}
+
 .title {
   color: white;
 }
 
-.links {
+.shows-background {
+  width: 200%;
+  border-radius: 5px;
+}
 
+.panel-header {
+  background-image: url();
+}
+
+.panel-body {
+  background-image: url("http://kazuya-akimoto.com/2005/2005imges/4513_Abstract_Silver_Reed_Pattern_Japanese_minimalism_lines_Japonisme_painting.jpg");
+  background-size: cover;
 }
