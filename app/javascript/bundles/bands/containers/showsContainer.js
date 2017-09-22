@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Row, Grid, Panel, ListGroup, List, p } from 'react-bootstrap';
+import FacebookProvider, { Share } from 'react-facebook';
 
 class ShowsContainer extends React.Component {
   constructor(props) {
@@ -8,6 +9,7 @@ class ShowsContainer extends React.Component {
       shows: this.props.shows
     }
   }
+
   render() {
     let shows = this.state.shows.map(show => {
       let header = show.date+" - "+show.city
@@ -22,7 +24,11 @@ class ShowsContainer extends React.Component {
               <h4>EVENT LINK:  </h4><p>{show.event_link}</p>
               <h4>TICKETS:  </h4><p>{show.tickets_link}</p>
               <h4>MAP:  </h4><img className="map" src={`https://maps.googleapis.com/maps/api/staticmap?center=${show.city.split("+")},${show.venue.split("+")}&zoom=14&size=400x400&key=AIzaSyDyQ6APuEAG4mFjNChs7wAkXVq1ZGebmiw`}/>
-
+              <FacebookProvider appId="352541045159332">
+                <Share href="http://www.facebook.com">
+                  <button type="button">Share on <img src="http://pattiaustin.com/wp-content/uploads/2013/11/facebook-icon.gif" className="icon"/></button>
+                </Share>
+              </FacebookProvider>
           </Panel>
       )
     })
