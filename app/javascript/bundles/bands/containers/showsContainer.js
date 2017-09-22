@@ -11,7 +11,6 @@ class ShowsContainer extends React.Component {
   }
 
   render() {
-    debugger;
     let shows = this.state.shows.map(show => {
       let header = show.date+" - "+show.city
       return(
