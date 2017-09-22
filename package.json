@@ -14,8 +14,10 @@
     "react-devise": "^0.0.18",
     "react-dom": "^15.6.1",
     "react-dropdowns-datepicker": "^1.0.3",
+    "react-facebook": "^4.0.14",
     "react-on-rails": "^9.0.2",
     "react-router": "^4.2.0",
+    "react-share": "^1.16.0",
     "redux": "^3.7.2",
     "redux-form": "^7.0.4",
     "webpacker": "0.0.3"

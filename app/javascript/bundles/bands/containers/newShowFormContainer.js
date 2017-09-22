@@ -38,6 +38,7 @@ class NewShowFormContainer extends React.Component {
   }
 
   handleSubmit(e){
+    e.preventDefault
     let formPayload = { show: {
       city: this.state.city,
       state: this.state.state,
