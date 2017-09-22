@@ -12,6 +12,7 @@
     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
+
   </head>
   <body>
     <ul>
@@ -25,24 +26,6 @@
         <% end %>
       </div>
     </ul>
-
-    <div class="container">
-      <% if !flash.empty? %>
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-            <% flash.each do |key, value| %>
-              <% if key == 'notice' %>
-                <div class="alert alert-success"><%= value %></div>
-              <% elsif key == 'alert' %>
-                <div class="alert alert-danger"><%= value %></div>
-              <% else %>
-                <div class="alert alert-<%= key %>"><%= value %></div>
-              <% end %>
-            <% end %>
-          </div>
-        </div>
-      <% end %>
-    </div>
 
     <%= yield %>
   </body>

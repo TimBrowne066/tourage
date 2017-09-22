@@ -1,1 +1,179 @@
+nav.menu {
+  background: none;
+  position: absolute;
+  top: 0;
+  .navbar-brand {
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    span {
+      color: #d9534f;
+    }
+    &:hover {
+      color: white;
+    }
+  }
+  .nav-item .nav-link {
+    color: #fff;
+    max-width: 72px;
+    height: 26px;
+    overflow: hidden;
+    margin-top: 5px;
+    padding: 0 3px;
 
+    p {
+      margin-bottom: 20px;
+      transition: all 0.2s linear;
+      padding: 0 3px;
+
+    }
+    .second{
+      background: white;
+      border-radius: 2px;
+      &.red {
+        background: #d9534f;
+        color: white;
+      }
+    }
+    &:hover {
+      p {
+        color: #333;
+        position: relative;
+        margin-top: -22px;
+      }
+    }
+  }
+}
+
+.jumbotron{
+  margin-bottom: 0 !important;
+  border-radius: 0 !important;
+  text-align: center;
+  position: relative;
+  height: 650px;
+  background: url('https://shamlatech.com/wp-content/themes/shamlatech/images/amp_page_img/banner-bg.gif') center no-repeat;
+  background-size: cover;
+  div.arrow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    margin: auto;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    -webkit-animation: bounce 1s linear;
+    -webkit-animation-iteration-count: infinite;
+    a {
+      color: #fff;
+    }
+  }
+  @-webkit-keyframes bounce {
+	  from { bottom:20px; }
+	  to { bottom:0; }
+  }
+  h1 {
+    color: white;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 90px;
+    font-size: 60px;
+    text-shadow: 1px 1px 5px black;
+    margin-bottom: 10px;
+  }
+  h3 {
+    color: white;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 5px black;
+  }
+
+
+}
+.redline {
+  height: 4px;
+  background: #2FC8E5;
+  -webkit-animation: surfin 3s linear;
+  width: 100%;
+  border-radius: 15px;
+}
+  @-webkit-keyframes surfin {
+	  from { width: 0; }
+	  to { width: 100%; }
+  }
+#intro {
+  background: #ebeeed;
+  margin-top: 0;
+  padding: 30px 0;
+  text-align: center;
+  h2 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 24px;
+  }
+  .line {
+    width: 100px;
+    height: 5px;
+    background: #555;
+    margin: 10px auto;
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+
+  .card {
+    background: white;
+    overflow: hidden;
+    .card-img {
+      height: 233.328px;
+      overflow: hidden;
+      img:hover {
+      transition: 0.4s linear;
+      -ms-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+    }
+
+  }
+}
+.contact {
+  padding: 30px 0;
+  background: url('https://i2.wp.com/www.staticmediagroup.co.uk/wp-content/uploads/2013/02/handsbackground.jpg') fixed no-repeat;
+  background-size: cover;
+  input {
+    border-radius: 0;
+    height: 50px;
+  }
+  .textarea {
+    border-radius: 0;
+    height: 150px;
+  }
+  button {
+    border-radius: 0;
+  }
+}
+footer {
+  background: white;
+  .top-footer{
+    padding: 30px 0;
+    border-bottom: 1px solid #888;
+  }
+  .main-footer {
+    padding: 30px 0;
+    .social a {
+      font-size: 20px;
+      color: #777;
+      &:hover {
+        color: #d9534f;
+      }
+    }
+    .year {
+      text-align: center;
+    }
+    .copyright {
+      text-align: right;
+    }
+  }
+}
