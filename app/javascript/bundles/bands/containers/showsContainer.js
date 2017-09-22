@@ -26,7 +26,7 @@ class ShowsContainer extends React.Component {
               <h4>TICKETS:  </h4><p>{show.tickets_link}</p>
               <h4>MAP:  </h4><img className="map" src={`https://maps.googleapis.com/maps/api/staticmap?center=${show.city.split("+")},${show.venue.split("+")}&zoom=14&size=400x400&key=AIzaSyDyQ6APuEAG4mFjNChs7wAkXVq1ZGebmiw`}/>
               <FacebookProvider appId="352541045159332">
-                <Share href=`https://tourageapp.herokuapp.com${window.location.pathname}`>
+                <Share href={`https://tourageapp.herokuapp.com${window.location.pathname}`}>
                   <button type="button">Share on <img src="http://pattiaustin.com/wp-content/uploads/2013/11/facebook-icon.gif" className="icon"/></button>
                 </Share>
               </FacebookProvider>
