@@ -24,16 +24,16 @@ class BandShowContainer extends React.Component {
 
     return (
       <Grid className="Background">
-        <Col xs={6} className="text-center">
+        <Col sm={12} md={6} className="text-center padding-0">
           <Row>
-            <Col xs={6} className="text-center">
+            <Col sm={12} md={6} className="text-center">
               <h1>{this.props.band.band_name}</h1>
               <img className="band-image" src={this.props.band.band_photo_url}/>
             </Col>
           </Row>
 
           <Row>
-            <Col xs={6} className="text-center">
+            <Col sm={12} md={6} className="text-center padding-0">
               <PanelGroup>
                 <Panel collapsible header="Band details" eventKey="1">
                   <h4>HOMETOWN</h4>  {this.props.band.hometown}<br /><br />
@@ -50,9 +50,9 @@ class BandShowContainer extends React.Component {
             </Col>
           </Row>
         </Col>
-        <Col xs={6}>
+        <Col sm={12} md={6}>
           <Row>
-            <Col xs={6} className="text-center">
+            <Col sm={12} md={6} className="text-center padding-0">
               <h2>TOUR DATES</h2>
               <PanelGroup>
                 <Panel collapsible header ="Add Tour Dates!" eventKey="1" className="buffer">

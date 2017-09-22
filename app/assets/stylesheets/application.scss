@@ -161,7 +161,7 @@ a:visited {
 }
 
 .shows-background {
-  width: 200%;
+  width: 100%;
   border-radius: 5px;
 }
 
@@ -172,4 +172,13 @@ a:visited {
 .panel-body {
   background-image: url("http://kazuya-akimoto.com/2005/2005imges/4513_Abstract_Silver_Reed_Pattern_Japanese_minimalism_lines_Japonisme_painting.jpg");
   background-size: cover;
+}
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+
+.map {
+  border: 1px solid darkgrey;
 }
