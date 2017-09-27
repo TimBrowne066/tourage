@@ -5,7 +5,7 @@ import ReactOnRails from 'react-on-rails';
 import DatePicker from'react-dropdowns-datepicker';
 
 
-class NewShowFormContainer extends React.Component {
+class EditShowContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -38,7 +38,7 @@ class NewShowFormContainer extends React.Component {
   }
 
   handleSubmit(e){
-    e.preventDefault();
+    e.preventDefault
     let formPayload = { show: {
       city: this.state.city,
       state: this.state.state,
@@ -54,12 +54,12 @@ class NewShowFormContainer extends React.Component {
     }};
     let header = ReactOnRails.authenticityHeaders({'Accept': 'application/json','Content-Type': 'application/json'});
     fetch(window.location.pathname+'/shows/', {
-      method: 'POST',
+      method: 'PATCH',
       headers: header,
       credentials: 'same-origin.',
       body: JSON.stringify(formPayload)
     }).then(response => {
-      if (response.ok){
+      if (response.ok) {
         let newShow = response.json()
         return newShow
       }
@@ -192,4 +192,4 @@ class NewShowFormContainer extends React.Component {
   }
 }
 
-export default NewShowFormContainer;
+export default EditShowContainer;

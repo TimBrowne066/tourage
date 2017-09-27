@@ -6,21 +6,20 @@ class EditBandContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      bandName: "",
-      hometown: "",
-      genre: "",
-      yearFormed: "",
-      bio: "",
-      recordLabel:"",
-      bandcampUrl: "",
-      facebookUrl: "",
-      bandEmail: "",
-      bandBookingAgent: "",
-      bandPhotoUrl: "",
+      bandName: this.props.band.band_name,
+      hometown: this.props.band.hometown,
+      genre: this.props.band.genre,
+      yearFormed: this.props.band.year_formed,
+      bio: this.props.band.bio,
+      recordLabel:this.props.band.record_label,
+      bandcampUrl: this.props.band.bandcamp_url,
+      facebookUrl: this.props.band.facebook_url,
+      bandEmail: this.props.band.band_email,
+      bandBookingAgent: this.props.band.band_booking_agent,
+      bandPhotoUrl: this.props.band.band_photo_url,
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
-    this.clearForm = this.clearForm.bind(this)
   }
 
   handleChange(e){
@@ -52,28 +51,12 @@ class EditBandContainer extends React.Component {
       credentials: 'same-origin',
       body: JSON.stringify(formPayload)
     }).then(response => {
-      let newBand = response.json()
-      return newBand
-    }).then(newBand => {
-      this.props.newBand(newBand);
-      this.clearForm()
-    })
-  }
-
-  clearForm(){
-    this.setState({
-      bandName: "",
-      hometown: "",
-      genre: "",
-      yearFormed: "",
-      bio: "",
-      recordLabel:"",
-      bandcampUrl: "",
-      facebookUrl: "",
-      bandEmail: "",
-      bandBookingAgent: "",
-      bandPhotoUrl: "",
-      userLogError: false
+      if (response.ok){
+        let editedBand = response.json()
+        return editedBand
+      }
+    }).then(editedBand => {
+      this.props.update(editedBand);
     })
   }
 
@@ -81,8 +64,8 @@ class EditBandContainer extends React.Component {
   render() {
 
     return (
-      <Col xs={6} xsOffset={3} className="form-background">
-        <form className="form">
+      <Col xs={12} className="form-background">
+        <form className="form" onSubmit={this.handleSubmit}>
 
           <FormGroup
             controlId="formBandName"
@@ -227,7 +210,7 @@ class EditBandContainer extends React.Component {
             />
           </FormGroup>
 
-          <Button type='submit' onClick={this.handleSubmit}>
+          <Button type='submit'>
             Submit
           </Button>
         </form>
