@@ -35,7 +35,7 @@ class BandShowContainer extends React.Component {
         <Col sm={12} lg={6} className="text-center padding-0">
           <Row>
             <Col sm={12} className="text-center">
-              <h1>{this.state.band.band_name}</h1>
+              <h1 className="band-title">{this.state.band.band_name}</h1>
               <img className="band-image" src={this.state.band.band_photo_url}/>
             </Col>
           </Row>
@@ -69,9 +69,9 @@ class BandShowContainer extends React.Component {
         </Col>
         <Col sm={12} lg={6}>
           <Row>
-            <Col sm={12} className="text-center padding-0">
+            <Col sm={12} className="text-center padding-0 shows-panel">
               <h2>TOUR DATES</h2>
-              <PanelGroup>
+              <PanelGroup className="shows-panel">
                 <Panel collapsible header ="Add Tour Dates!" eventKey="1" className="buffer">
                   <NewShowFormContainer
                     band_id={this.props.band.id}
