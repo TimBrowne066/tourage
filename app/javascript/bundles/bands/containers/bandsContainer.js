@@ -35,10 +35,13 @@ class BandsContainer extends React.Component {
             </Col>
           </Row>
           <Row>
+            <Col xs={6} className="text-center">
             <BandCardsContainer
               bands={this.state.bands}
               current_user={this.props.current_user}
             />
+            </Col>
+
           </Row>
           <div>
             <PanelGroup>
