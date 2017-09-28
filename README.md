@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+TOURAGE is an application for independent touring musicians, managers, and booking agents to simplify and centralize their tour date information.
 
-Things you may want to cover:
+Versions:
+Ruby version 2.4.0
+Rails version 5.1.4
 
-* Ruby version
+Dependencies:
+react-on-rails 9.0.2
 
-* System dependencies
+Setup:
+1. bundle install
+2. yarn install
+3. foreman start -f Procfile.dev
+4. rake db:create
+5. rake db:migrate
 
-* Configuration
 
-* Database creation
+Testing:
+TOURAGE uses a combination of Rspec, Capybara, Phantomjs, Poltergeist, Figaro, and Selenium-webdriver.
+Run the test suite after bundling and yarn installing with the rspec or rake command.
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Deployment:
+The application is configured for easy deployment to Heroku, so long as all gem and node dependencies are installed.

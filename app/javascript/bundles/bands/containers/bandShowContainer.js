@@ -57,10 +57,10 @@ class BandShowContainer extends React.Component {
                   </Panel>
                 </Panel>
                 <Panel collapsible header="Links" eventKey="2">
-                  <h4>FACEBOOK</h4>  <a href={this.state.band.facebook_url}><img src="http://pattiaustin.com/wp-content/uploads/2013/11/facebook-icon.gif" className="icon"/></a><br />
-                  <h4>BANDCAMP</h4> <a href={this.state.band.bandcamp_url}><img src="http://musformation.com/wp-content/uploads/2013/01/bandcamp_logo4.png" className="icon"/></a><br />
-                  <h4>CONTACT</h4>  <a href={this.state.band.band_email}><img src="https://cdn4.iconfinder.com/data/icons/miu/24/circle_social-email-outline-stroke-512.png" className="icon"/></a><br />
-                  <h4>BOOKING</h4>  <a href={this.state.band.band_booking_agent}><img src="https://cdn4.iconfinder.com/data/icons/miu/24/circle_social-email-outline-stroke-512.png" className="icon"/></a><br />
+                  <h4>FACEBOOK</h4>  <a href={this.state.band.facebook_url}><img src="http://pattiaustin.com/wp-content/uploads/2013/11/facebook-icon.gif" className="icon"/></a>
+                  <h4>BANDCAMP</h4> <a href={this.state.band.bandcamp_url}><img src="http://musformation.com/wp-content/uploads/2013/01/bandcamp_logo4.png" className="icon"/></a>
+                  <h4>CONTACT</h4>  <a href={this.state.band.band_email}><img src="https://cdn4.iconfinder.com/data/icons/miu/24/circle_social-email-outline-stroke-512.png" className="icon"/></a>
+                  <h4>BOOKING</h4>  <a href={this.state.band.band_booking_agent}><img src="https://cdn4.iconfinder.com/data/icons/miu/24/circle_social-email-outline-stroke-512.png" className="icon"/></a>
 
                 </Panel>
               </PanelGroup>

@@ -29,7 +29,7 @@ class ShowsContainer extends React.Component {
                   <button type="button">Share on <img src="http://pattiaustin.com/wp-content/uploads/2013/11/facebook-icon.gif" className="icon"/></button>
                 </Share>
               </FacebookProvider>
-              <button type="button"><a href="https://twitter.com/intent/tweet?text=Playing%20a%20show!"> Share on <img src="http://pngimg.com/uploads/twitter/twitter_PNG33.png" className="icon"/></a></button>
+              <button type="button"><a href="https://twitter.com/intent/tweet?text=Playing%20a%20show!"> Share on <img src="https://image.flaticon.com/icons/svg/56/56729.svg" className="icon"/></a></button>
           </Panel>
       )
     })
