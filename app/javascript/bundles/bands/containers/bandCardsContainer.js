@@ -6,7 +6,7 @@ import { PanelGroup, Panel, Grid, Row, Col, Button, Well } from 'react-bootstrap
 const BandCardsContainer = (props) => {
   let bands = props.bands.map(band => {
     return(
-      <Col xs={6} className="text-center">
+      <Col xs={12} xsOffset={0}  lg={6} className="text-center">
         <BandCard
           key={band.id}
           id={band.id}
