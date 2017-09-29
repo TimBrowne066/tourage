@@ -81,7 +81,7 @@ class NewBandFormContainer extends React.Component {
   render() {
 
     return (
-      <Col xs={6} xsOffset={3} className="form-background">
+      <Col xs={12} lg={6} lgOffset={3} className="form-background">
         <form className="form">
 
           <FormGroup

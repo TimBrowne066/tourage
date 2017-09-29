@@ -20,6 +20,7 @@ class EditBandContainer extends React.Component {
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleDestroy = this.handleDestroy.bind(this)
   }
 
   handleChange(e){
@@ -60,6 +61,14 @@ class EditBandContainer extends React.Component {
     })
   }
 
+  handleDestroy(){
+    let header = ReactOnRails.authenticityHeaders({'Accept': 'application/json','Content-Type': 'application/json'});
+    fetch(window.location.pathname+'/', {
+      method: 'DELETE',
+      headers: header,
+      credentials: 'same-origin',
+    })
+  }
 
   render() {
 
@@ -213,6 +222,8 @@ class EditBandContainer extends React.Component {
           <Button type='submit'>
             Submit
           </Button>
+
+          <Button onClick={this.handleDestroy} href='/bands/'>Delete this band</Button>
         </form>
       </Col>
     );

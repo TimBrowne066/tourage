@@ -51,6 +51,11 @@ class BandsController < ApplicationController
     end
   end
 
+  def destroy
+    @band = Band.find(params[:id])
+    @band.destroy
+    redirect_to root_path
+  end
 
 
   private

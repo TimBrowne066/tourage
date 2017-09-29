@@ -4,7 +4,6 @@ import PageTitle from '../components/pageTitle';
 import NewBandFormContainer from './newBandFormContainer'
 import { PanelGroup, Panel, Grid, Row, Col, Button, Well } from 'react-bootstrap';
 
-
 class BandsContainer extends React.Component {
   constructor(props) {
     super(props);
@@ -27,15 +26,15 @@ class BandsContainer extends React.Component {
     }
     console.log(this.state)
       return (
-        <Grid className="background">
+        <Grid xsOffset={0} className="background">
           <Row>
-            <Col xs={12} className="text-center">
+            <Col xs={12} xsOffset={0} sm={12} className="text-center">
               <PageTitle title={this.props.title} />
               <h3>{subHeader}</h3>
             </Col>
           </Row>
           <Row>
-            <Col xs={12} className="text-center">
+            <Col xs={12} xsOffset={0} sm={12} className="text-center">
             <BandCardsContainer
               bands={this.state.bands}
               current_user={this.props.current_user}
