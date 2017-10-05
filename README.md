@@ -2,6 +2,8 @@
 
 TOURAGE is an application for independent touring musicians, managers, and booking agents to simplify and centralize their tour date information.
 
+https://tourageapp.herokuapp.com
+
 Versions:
 Ruby version 2.4.0
 Rails version 5.1.4
