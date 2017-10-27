@@ -17,6 +17,7 @@
     "react-dropdowns-datepicker": "^1.0.3",
     "react-facebook": "^4.0.14",
     "react-modal": "^2.3.2",
+    "react-native-cli": "^2.0.1",
     "react-on-rails": "^9.0.2",
     "react-router": "^4.2.0",
     "react-share": "^1.16.0",
